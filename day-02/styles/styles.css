@@ -1,0 +1,29 @@
+h2 {
+    color: darkred;
+}
+/*class from p1*/
+.warning {
+    color: red;
+}
+
+.bg-gray {
+    background-color: gray;
+}
+
+ol li,
+dd {
+    color: rebeccapurple;
+}
+/*table styles */
+section.warning {
+    background-color: yellow;
+}
+
+.table-custom {
+    color: green;
+
+}
+
+table {
+    color: antiquewhite;
+}
