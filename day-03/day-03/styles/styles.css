@@ -9,7 +9,23 @@ body {
 h2 {
 	color: darkred;
 }
-
+a {
+	color: #338033;
+	
+}
+a:visited{
+	color: #003800;
+}
+a:hover, a:focus{
+	background-color: #003800;
+	color: white;
+}
+a:focus{
+	outline: 1px dotted #003800;
+}
+a:active{
+	background-color: #ff0000;
+}
 .warning {
 	color: #ff0000;
 }
@@ -33,4 +49,7 @@ section.warning {
 
 table {
 	color: orange;
+}
+.section-table{
+	margin: 1rem 2rem 3rem 4rem;
 }
