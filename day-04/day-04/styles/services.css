@@ -5,8 +5,8 @@ body {
 	font-weight: 400;
 	line-height: 1.5;
 	color: #282828;
-	max-width: 31.25rem;
-	margin: 0 auto;
+	
+	
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -77,8 +77,17 @@ nav li {
 nav a {
 	text-decoration: none;
 }
+/* main styles here  */
+main{
+	max-width: 75rem;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
 
 /* Services Styles */
+.cards{
+	display: flex;
+}
 .services article {
 	background-color: #caffca;
 	padding: 1rem 2rem;
@@ -106,7 +115,19 @@ nav a {
 .services a:active {
 	background-color: #234723;
 }
-
+@media (min-width: 50em){
+	.cards {
+		flex-direction: column;
+		/* flex-direction: column-reverse;
+		flex-direction: row-reverse; */
+	}
+	.services article{
+		background-color: #caebff;
+	}
+	.services a {
+		background-color: #346470;
+	}
+}
 
 /* Testimonials Styles */
 .testimonials img {
