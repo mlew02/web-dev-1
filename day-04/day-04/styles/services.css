@@ -87,6 +87,7 @@ main{
 /* Services Styles */
 .cards{
 	display: flex;
+	flex-direction: column;
 }
 .services article {
 	background-color: #caffca;
@@ -117,9 +118,24 @@ main{
 }
 @media (min-width: 50em){
 	.cards {
-		flex-direction: column;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: stretch;
+		height: 40rem;
 		/* flex-direction: column-reverse;
 		flex-direction: row-reverse; */
+	}
+	.cards article{
+		/* width: 30%; */
+		flex: 0 1 30%;
+
+	}
+
+	.cards .service-1{
+		flex: 0 1 50%;
+		order: 1;
+		align-self: baseline;
 	}
 	.services article{
 		background-color: #caebff;
@@ -130,6 +146,7 @@ main{
 }
 
 /* Testimonials Styles */
+
 .testimonials img {
 	display: block;
 	margin: 1rem auto;
@@ -144,4 +161,21 @@ main{
 .testimonials blockquote p {
 	display: inline-block;
 	margin: 0;
+}
+
+@media (min-width: 50em){
+	.testimonials{
+		display: block;
+		flex-wrap: wrap;
+	}
+	/* .testimonials > *:not(article){
+		width:100%;
+	} */
+	.testimonials article{
+		max-width: 20rem;
+		justify-content: space-around;
+	}
+	.testimonials h2 {
+		width: 100%;
+	}
 }
