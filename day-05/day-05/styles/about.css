@@ -99,7 +99,11 @@ main {
 
 /* Div with images flex styles go here */
 
-
+.team{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 /* Form Styles 
 * Form should have a max-width of 480px and should be centred along the left / right axis within the browser
 * To create the numbered green circles, try border-radius and setting the value to 50% 

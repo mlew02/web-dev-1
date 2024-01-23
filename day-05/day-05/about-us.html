@@ -33,10 +33,10 @@
 				   cite="https://www.imdb.com/title/tt1031459/characters/nm0136797">"In the end, life and business are
 					about human connections. And computers are about trying to murder you in a lake."</q></p>
 
-			<!-- <div class="team">
+			<div class="team">
 				<img src="images/customer1.jpg" alt="A photo of a man">
 				<img src="images/cat-photo.jpg" alt="A photo of a cat at a desk">
-			</div> -->
+			</div>
 
 			<h3>Our Favorite Buzzwords</h3>
 
@@ -51,6 +51,43 @@
 			<p>You can <a href="media/resume.pdf">download our resume</a> to learn more.</p>
 
 			<!-- Code along during the lecture to start building your form -->
+			<form action="#" method="post">
+				<h2>Apply Now</h2>
+				<fieldset>
+					<span class="number">1</span>
+					<legend>Your basic info</legend>
+					<label for="name">Name:</label>
+					<input type="text" name="user-name" id="name">
+
+					<label for="email">Email:</label>
+					<input type="email" name="user-email" id="email">
+
+					<label for="password">Password:</label>
+					<input type="password" name="user-password" id="password">
+
+					<label for="comments">Comments:</label>
+					<textarea id="comments" name="comments" id="comment" cols="30" rows="10"></textarea>
+
+				</fieldset>
+				<fieldset>
+					<span class="number">2</span>
+					<legend>Work Details</legend>
+
+					<label>Preferred Work Setup</label>
+
+					<input type="radio" name="work-setup" id="hybrid" value="hybrid">
+					<label for="hybrid" class="light">Hybrid</label>
+
+					<input type="radio" name="work-setup" id="hybrid" value="hybrid">
+					<label for="hybrid" class="light">Hybrid</label>
+
+					<label for="" class="light"></label>
+				</fieldset>
+
+				<input type="submit" value="submit">
+
+
+			</form>
 
 		</main>
 
